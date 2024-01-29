@@ -16,7 +16,21 @@
     width: 30%;
     color: #282c34;
     font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
 }
+
+.navLink {
+    text-decoration: none;
+    color: #282c34;
+}
+
+
+/*.nav a.active {*/
+/*    color: #7fb8f1;*/
+/*    text-decoration: underline;*/
+/*}*/
 
 .content {
     background-color: #282c34;
