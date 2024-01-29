@@ -14,6 +14,7 @@ function App() {
                     Здесь будут кроссовки
                 </div>
             </div>
+
             <div className={styles.footer}>abibas 2023</div>
         </div>
     );
