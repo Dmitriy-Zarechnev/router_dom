@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export const PageTwo = () => {
     return (
@@ -30,6 +30,6 @@ export const PageTwo = () => {
                 The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
             </p>
         </div>
-    );
-};
+    )
+}
 
