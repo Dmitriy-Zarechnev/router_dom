@@ -41,7 +41,6 @@ function App() {
                     </Routes>
                 </S.Content>
             </S.ContentWrapper>
-
             <S.Footer>Mickrotasks 2024</S.Footer>
         </S.Body>
     )
