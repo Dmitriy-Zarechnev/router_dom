@@ -64,7 +64,7 @@ function App() {
     const pumaArr: SnikersItem[] = [
         {
             id: 1,
-            model: 'Puma Trinity',
+            model: 'Puma trinity',
             collection: 'Collection 2022',
             price: '1000$',
             picture: img4

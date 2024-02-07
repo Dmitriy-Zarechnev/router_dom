@@ -11,8 +11,9 @@ export const Abibas = (props: { itemsArr: SnikersItem[] }) => {
             <S.ImgWrapper>
                 {props.itemsArr.map(el => {
                     return (
-                        <Link key={el.id} to={`${PATH.PAGE3}/${el.id}`}>
+                        <Link key={el.id} to={`${PATH.PAGE3}/${el.id}`} style={{ textDecoration: 'none' }}>
                             <S.Image src={el.picture} alt={`${el.model}-picture here`}/>
+                            <S.NameText>{el.model}</S.NameText>
                         </Link>
                     )
                 })}

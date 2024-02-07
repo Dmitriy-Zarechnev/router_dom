@@ -69,7 +69,7 @@ const Footer = styled.footer`
 const ImgWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 20px;
     justify-content: center;
 `
 
@@ -77,6 +77,14 @@ const Image = styled.img`
     width: 200px;
     height: 200px;
     object-fit: cover;
+`
+
+const NameText = styled.span`
+    text-align: center;
+    font-size: 20px;
+    color: aqua;
+    display: block;
+    text-transform: capitalize;
 `
 
 
@@ -120,5 +128,6 @@ export const S = {
     SpanText,
     ModelImg,
     ImgWrapper,
-    Image
+    Image,
+    NameText
 }

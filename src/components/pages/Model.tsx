@@ -6,17 +6,18 @@ import {SnikersItem} from '../../App'
 
 export const Model = (props: { itemsArr: SnikersItem[] }) => {
     const params = useParams()
+    const actualParams = Number(params.id) - 1
 
     return (
         <>
-            {Number(params.id) < props.itemsArr.length
+            {actualParams < props.itemsArr.length
                 ? <S.ModelWrapper>
-                    <S.ModelHeader>{props.itemsArr[Number(params.id) - 1].model}</S.ModelHeader>
-                    <S.SpanText>{props.itemsArr[Number(params.id) - 1].collection}</S.SpanText>
-                    <S.ModelImg src={props.itemsArr[Number(params.id) - 1].picture}/>
-                    <S.SpanText>{props.itemsArr[Number(params.id) - 1].price}</S.SpanText>
+                    <S.ModelHeader>{props.itemsArr[actualParams].model}</S.ModelHeader>
+                    <S.SpanText>{props.itemsArr[actualParams].collection}</S.SpanText>
+                    <S.ModelImg src={props.itemsArr[actualParams].picture}/>
+                    <S.SpanText>{props.itemsArr[actualParams].price}</S.SpanText>
                 </S.ModelWrapper>
-                : <S.ModelHeader>Wait a minute</S.ModelHeader>
+                : <S.ModelHeader>Wait a minute🤡</S.ModelHeader>
             }
         </>
     )
