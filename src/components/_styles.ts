@@ -31,7 +31,7 @@ const Navigation = styled.ul`
 
 const NavWrapper = styled.li`
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 30px;
 
     & > a {
         text-decoration: none;
@@ -64,6 +64,48 @@ const Footer = styled.footer`
     color: white;
 `
 
+
+// ---------------- Adidas -------------
+const ImgWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+`
+
+const Image = styled.img`
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+`
+
+
+//  ----- Model -----------
+const ModelWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+`
+
+const ModelHeader = styled.h2`
+    text-align: center;
+`
+
+const SpanText = styled.span`
+    text-align: center;
+    font-size: 40px;
+    color: aqua;
+`
+
+const ModelImg = styled.img`
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+`
+
+
 export const S = {
     Body,
     Header,
@@ -72,5 +114,11 @@ export const S = {
     Navigation,
     NavWrapper,
     Content,
-    Footer
+    Footer,
+    ModelWrapper,
+    ModelHeader,
+    SpanText,
+    ModelImg,
+    ImgWrapper,
+    Image
 }

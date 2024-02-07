@@ -1,9 +1,22 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+import {PATH, SnikersItem} from '../../App'
+import {S} from '../_styles'
 
-export const PageThree = () => {
+export const Puma = (props: { itemsArr: SnikersItem[] }) => {
     return (
         <div>
-            <h2> ABIBAS</h2>
+            <h2>PUMA</h2>
+
+            <S.ImgWrapper>
+                {props.itemsArr.map(el => {
+                    return (
+                        <Link key={el.id} to={`${PATH.PAGE2}/${el.id}`}>
+                            <S.Image src={el.picture} alt={`${el.model}-picture here`}/>
+                        </Link>
+                    )
+                })}
+            </S.ImgWrapper>
             <p>
                 What is Lorem Ipsum?
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
