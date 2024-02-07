@@ -8,12 +8,17 @@ export const Model = (props: { itemsArr: SnikersItem[] }) => {
     const params = useParams()
 
     return (
-        <S.ModelWrapper>
-            <S.ModelHeader>{props.itemsArr[Number(params.id) - 1].model}</S.ModelHeader>
-            <S.SpanText>{props.itemsArr[Number(params.id) - 1].collection}</S.SpanText>
-            <S.ModelImg src={props.itemsArr[Number(params.id) - 1].picture}/>
-            <S.SpanText>{props.itemsArr[Number(params.id) - 1].price}</S.SpanText>
-        </S.ModelWrapper>
+        <>
+            {Number(params.id) < props.itemsArr.length
+                ? <S.ModelWrapper>
+                    <S.ModelHeader>{props.itemsArr[Number(params.id) - 1].model}</S.ModelHeader>
+                    <S.SpanText>{props.itemsArr[Number(params.id) - 1].collection}</S.SpanText>
+                    <S.ModelImg src={props.itemsArr[Number(params.id) - 1].picture}/>
+                    <S.SpanText>{props.itemsArr[Number(params.id) - 1].price}</S.SpanText>
+                </S.ModelWrapper>
+                : <S.ModelHeader>Wait a minute</S.ModelHeader>
+            }
+        </>
     )
 }
 
