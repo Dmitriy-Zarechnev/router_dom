@@ -3,7 +3,6 @@ import {useParams} from 'react-router-dom'
 import {S} from '../_styles'
 import {SnikersItem} from '../../App'
 
-
 export const Model = (props: { itemsArr: SnikersItem[] }) => {
     const params = useParams()
     const actualParams = Number(params.id) - 1
