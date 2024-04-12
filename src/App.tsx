@@ -15,11 +15,13 @@ import img6 from './assets/Puma_3.jpg'
 import img7 from './assets/Abibas_1.webp'
 import img8 from './assets/Abibas_2.jpg'
 import img9 from './assets/Abibas_3.jpg'
+import {Prices} from './components/pages/Prices'
 
 export const PATH = {
     PAGE1: '/adidas',
     PAGE2: '/puma',
     PAGE3: '/abibas',
+    PAGE4: '/prices',
     MODEL1: '/adidas/:id',
     MODEL2: '/puma/:id',
     MODEL3: '/abibas/:id',
@@ -118,6 +120,7 @@ function App() {
                     <S.NavWrapper><NavLink to={PATH.PAGE1}>Adidas</NavLink></S.NavWrapper>
                     <S.NavWrapper><NavLink to={PATH.PAGE2}>Puma</NavLink></S.NavWrapper>
                     <S.NavWrapper><NavLink to={PATH.PAGE3}>Abibas</NavLink></S.NavWrapper>
+                    <S.NavWrapper><NavLink to={PATH.PAGE4}>Prices</NavLink></S.NavWrapper>
                 </S.Navigation>
 
                 <S.Content>
@@ -127,6 +130,7 @@ function App() {
                         <Route path={PATH.PAGE1} element={<Adidas itemsArr={adidasArr}/>}/>
                         <Route path={PATH.PAGE2} element={<Puma itemsArr={pumaArr}/>}/>
                         <Route path={PATH.PAGE3} element={<Abibas itemsArr={abibasArr}/>}/>
+                        <Route path={PATH.PAGE4} element={<Prices/>}/>
 
                         <Route path={PATH.MODEL1} element={<Model itemsArr={adidasArr}/>}/>
                         <Route path={PATH.MODEL2} element={<Model itemsArr={pumaArr}/>}/>
